@@ -5,24 +5,150 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    
     <style>
+        #top{
+            text-align: center;
+            padding:2px;
+            background-color: green;
+            color: aliceblue;
+            font-size: 8px;
+        }
+
         #container{
             display: flex;
             justify-content: space-evenly;
-            background-color: aquamarine;
-            color: aliceblue;
-            font-size: 30px;
-            padding:20px;
+            background-color:whitesmoke;
+            padding: 10px;  
+            text-decoration: none;                
         }
+
+        #logo{
+            width:110px;                       
+        }
+
+        #logo2{
+            height: 30px;
+            text-align: center;
+            margin-top: 60%;
+        }
+
+        #containers{
+          display: flex;
+          margin: auto;
+          text-align: center;            
+        }
+
+        #sub{
+            margin-right: 11%;
+            margin-left: 11%;           
+            text-decoration: none;              
+        }
+
+        #sub1{
+            margin-left: 6%;
+            margin-right: 6%;
+        }
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: whitesmoke;
+  color:black;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px; 
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: #3e8e41;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {color: #3e8e41;}
+
     </style>
 </head>
+
 <body>
-    <h1>basefile</h1>
+
+    <div id="top">
+    <h1>Delivering in Mumbai and Delhi | Same day delivery!</h1>
+   </div>
+
     <div id="container">
-        <div><a href="men.html">MEN</a></div>
-        <div><a href="women.html">WOMEN</a></div>
-        <div>SIGN IN </div>
-        <div>CONTACT US</div>
+
+    <div id="containers">
+
+       <div id="sub">
+            <div class="dropdown">
+                <button class="dropbtn">SHOP</button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+            </div>
+         </div>   
+
+         <div id="sub">
+            <div class="dropdown">
+                <button class="dropbtn">LEARN</button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+            </div>
+         </div>
+         
+         <div id="sub">
+            <div class="dropdown">
+                <button class="dropbtn">GROW</button>
+                <div class="dropdown-content">
+                  
+                </div>
+            </div>
+         </div>
+         
     </div>
+
+    <div id="containers">
+        <img id ="logo" src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1596288204" />
+    </div>
+
+    <div id="containers">
+        <div id="sub1">
+        <img id="logo2" src="https://cdn.icon-icons.com/icons2/2642/PNG/512/google_map_location_logo_icon_159350.png" />
+        </div>
+        <div id="sub1"><h5>Mumbai</h5></div>           
+    </div>
+    </div>
+  </div>
+
 </body>
 </html>
